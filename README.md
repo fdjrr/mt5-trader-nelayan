@@ -20,7 +20,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 2. Clone repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/fdjrr/mt5-trader-nelayan
 cd mt5-trader-nelayan
 ```
 
@@ -31,14 +31,14 @@ uv sync
 
 4. Jalankan aplikasi:
 ```bash
-uv run python main.py
+uv run main.py
 ```
 
 ### Menggunakan pip
 
 1. Clone repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/fdjrr/mt5-trader-nelayan
 cd mt5-trader-nelayan
 ```
 
@@ -57,7 +57,7 @@ pip install -r requirements.txt
 
 4. Jalankan aplikasi:
 ```bash
-uv run main.py
+python main.py
 ```
 
 ## Konfigurasi
@@ -68,7 +68,7 @@ Pastikan MetaTrader5 terminal sudah berjalan dan login ke akun trading sebelum m
 
 1. Jalankan program:
 ```bash
-uv run main.py
+python main.py
 ```
 
 2. Masukkan parameter yang diminta:
