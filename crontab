@@ -1,0 +1,1 @@
+*/10 0 * * * /usr/bin/python3 /home/user/trader.py >> /home/user/trader.log 2>&1
