@@ -1,0 +1,10 @@
+{
+    "symbol": "XAUUSDc",
+    "order_type": "BUY",
+    "lot_size": 0.01,
+    "point": 10,
+    "start_price": 4100.0,
+    "end_price": 4000.0,
+    "magic": 234000,
+    "deviation": 20
+}

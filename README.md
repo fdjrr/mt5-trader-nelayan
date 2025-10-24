@@ -71,23 +71,27 @@ Pastikan MetaTrader5 terminal sudah berjalan dan login ke akun trading sebelum m
 python main.py
 ```
 
-2. Masukkan parameter yang diminta:
+2. Masukkan konfigurasi yang diminta:
    - **Symbol**: Pasangan mata uang (contoh: EURUSD, GBPUSD)
+   - **Order Type**: Tipe order (BUY atau SELL)
    - **Lot Size**: Ukuran lot untuk setiap order (contoh: 0.01)
+   - **Point**: Jarak antar order dalam point
    - **Start Price**: Harga awal untuk grid
    - **End Price**: Harga akhir untuk grid
-   - **Point**: Jarak antar order dalam point
-   - **Order Type**: Tipe order (BUY atau SELL)
 
-### Contoh Input
+### Contoh Konfigurasi
 
-```
-Symbol: EURUSD
-Lot Size: 0.01
-Start Price: 1.10000
-End Price: 1.09000
-Point: 100
-Order Type: BUY
+```json
+{
+    "symbol": "XAUUSDc",
+    "order_type": "BUY",
+    "lot_size": 0.01,
+    "point": 10,
+    "start_price": 4100.0,
+    "end_price": 4000.0,
+    "magic": 234000,
+    "deviation": 20
+}
 ```
 
 Bot akan membuat grid pending orders dari start price ke end price dengan interval sesuai point yang ditentukan.
