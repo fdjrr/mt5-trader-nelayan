@@ -7,7 +7,7 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y \
     python3-pip \
     wget \
-    && pip3 install --upgrade pip
+    && pip3 install --upgrade pip --break-system-packages
 
 RUN wget -q https://dl.winehq.org/wine-builds/winehq.key \
     && apt-key add winehq.key \
@@ -22,8 +22,8 @@ RUN apt-get install --install-recommends -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-COPY /Metatrader /Metatrader
-RUN chmod +x /Metatrader/start.sh
+COPY /scripts /scripts
+RUN chmod +x /scripts/start.sh
 COPY /root /
 
 EXPOSE 3000 8001
