@@ -11,14 +11,14 @@ class TraderNelayan:
         with open("config.json", "r") as f:
             config = json.load(f)
 
-            symbol = config["symbol"]
-            order_type = config["order_type"]
-            lot_size = config["lot_size"]
-            point = config["point"]
-            start_price = config["start_price"]
-            end_price = config["end_price"]
-            deviation = config["deviation"]
-            magic = config["magic"]
+            symbol = config["v1"]["symbol"]
+            order_type = config["v1"]["order_type"]
+            lot_size = config["v1"]["lot_size"]
+            point = config["v1"]["point"]
+            start_price = config["v1"]["start_price"]
+            end_price = config["v1"]["end_price"]
+            deviation = config["v1"]["deviation"]
+            magic = config["v1"]["magic"]
 
         if order_type != "BUY" and order_type != "SELL":
             logger.error("Invalid order type")
